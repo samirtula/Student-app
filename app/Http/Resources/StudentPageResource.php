@@ -16,12 +16,12 @@ class StudentPageResource extends JsonResource
     public function toArray($request)
     {
         /**
-         * @var User $user
+         * @var User $this
          */
 
 
         return [
-            var_dump($user->name())
+            'lessons' => $this->lessons()
         ];
     }
 }
