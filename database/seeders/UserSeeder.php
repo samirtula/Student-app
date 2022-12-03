@@ -58,7 +58,7 @@ class UserSeeder extends Seeder
             $canUploadHomework,
         ]);
 
-        $users = User::factory(20)
+        $users = User::factory(2000)
             ->create();
         foreach ($users as $user) {
             $user->assignRole('student');
